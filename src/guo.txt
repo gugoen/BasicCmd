@@ -2,3 +2,23 @@
 
 mvn clean package -DskipTests -Dscope.type=provided
 mvn clean package -Dmaven.test.skip=true -P local
+
+二、第一次修改（V2.0）
+
+// 1. 构造，表示获取当前的时间
+Date date = new Date();
+System.out.println(date);
+
+// 2. 获取一个日期的时间戳（从1970年1月1日 0:00:00）开始计算的毫秒数
+long timestamp = date.getTime();
+System.out.println(timestamp);
+
+// 3. 通过一个时间戳实例化，获取指定的时间
+Date date2 = new Date(1582859805644L);
+System.out.println(date2);
+
+// 4. 常用方法
+System.out.println(date.before(date2)); // 判断一个时间是否在另外一个时间之前
+System.out.println(date.after(date2)); // 判断一个时间是否在另外一个时间之后
+System.out.println(date.equals(date2)); // 判断两个时间是否相同
+date.setTime(1582859805644L); // 通过一个时间戳设置时间
