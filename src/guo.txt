@@ -1,4 +1,4 @@
-一、maven的常见打包指令
+
 
 mvn clean package -DskipTests -Dscope.type=provided
 mvn clean package -Dmaven.test.skip=true -P local
@@ -29,3 +29,4 @@ date.setTime(1582859805644L); // 通过一个时间戳设置时间
 四、第三次修改(V2.2)
 测试：2 此时：update 004
 
+五、测试代码写入github
