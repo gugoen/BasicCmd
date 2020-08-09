@@ -1,0 +1,4 @@
+一、maven的常见打包指令
+
+mvn clean package -DskipTests -Dscope.type=provided
+mvn clean package -Dmaven.test.skip=true -P local
